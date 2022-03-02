@@ -22,6 +22,9 @@ int cbinsearch(int *arr, int size, int value) {
                 i = mid + 1;
             }
         }
+        if (i == j && arr[i] == value) {
+            k++;
+        }
         if (flag) {
             break;
         }

@@ -6,7 +6,7 @@ int cbinsearch(int *arr, int size, int value) {
     while (true) {
         flag = true;
         int i = 0, j = size - 1;
-        while (i <= j) {
+        while (i < j) {
             int mid = i + (j - i) / 2;
             if (arr[mid] == value) {
                 for (int ii = mid; ii < size; ++ii) {
